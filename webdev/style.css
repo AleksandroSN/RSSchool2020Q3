@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto-Regular"),
-    url("../assets/fonts/Roboto-Regular.woff2") format("woff2");
+    url("./assets/fonts/Roboto-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 500;
   src: local("Roboto-Medium"),
-    url("../assets/fonts/Roboto-Medium.woff2") format("woff2");
+    url("./assets/fonts/Roboto-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("Roboto-Bold"),
-    url("../assets/fonts/Roboto-Bold.woff2") format("woff2");
+    url("./assets/fonts/Roboto-Bold.woff2") format("woff2");
 }
 
 *,
@@ -169,7 +169,7 @@ input::placeholder {
 }
 
 .first-screen {
-  background: center center url("../assets/img/bg-image.jpg");
+  background: center center url("./assets/img/bg-image.jpg");
 }
 
 .first-screen__wrapper {
@@ -337,7 +337,7 @@ input::placeholder {
 }
 
 .fifth-screen {
-  background: url("../assets/img/content-image-3.jpg");
+  background: url("./assets/img/content-image-3.jpg");
 }
 
 .fifth-screen__form {
@@ -424,11 +424,11 @@ input::placeholder {
 }
 
 .sixth-screen__button.button-apple:after {
-  background: center no-repeat #009cc2 url("../assets/img/icon-apple.svg");
+  background: center no-repeat #009cc2 url("./assets/img/icon-apple.svg");
 }
 
 .sixth-screen__button.button-android:after {
-  background: center no-repeat #009cc2 url("../assets/img/icon-android.svg");
+  background: center no-repeat #009cc2 url("./assets/img/icon-android.svg");
 }
 
 .footer {
