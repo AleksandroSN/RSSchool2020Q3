@@ -55,10 +55,6 @@ body {
   outline: none;
 }
 
-.grid-span-2 {
-  grid-column: span 2;
-}
-
 .output {
   grid-column: 1 / -1;
   border: 1px solid rgba(58, 56, 54, 0.904);
@@ -68,12 +64,14 @@ body {
   align-items: flex-end;
   padding: 10px;
   font-weight: 700;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
-.output .output-current {
-  font-size: 2rem;
+.output .current-operand {
+  font-size: 2.5rem;
 }
 
-.output .output-previous {
+.output .previous-operand {
   font-size: 1rem;
 }
