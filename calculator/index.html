@@ -11,31 +11,48 @@
     <title>Calculator</title>
   </head>
   <body>
+    <h1>Windows 10 Calculator</h1>
     <div class="container">
       <div class="output">
         <div data-previous-operand class="previous-operand"></div>
         <div data-current-operand class="current-operand"></div>
       </div>
       <button data-operation>√</button>
-      <button data-operation>x<sup>2</sup></button>
+      <button data-operation>x<sup>y</sup></button>
       <button data-delete>DEL</button>
-      <button data-operation>÷</button>
+      <button data-all-clear>AC</button>
       <button data-number class="calc-numbers">7</button>
       <button data-number class="calc-numbers">8</button>
       <button data-number class="calc-numbers">9</button>
-      <button data-operation>x</button>
+      <button data-operation>÷</button>
       <button data-number class="calc-numbers">4</button>
       <button data-number class="calc-numbers">5</button>
       <button data-number class="calc-numbers">6</button>
-      <button data-operation>-</button>
+      <button data-operation>x</button>
       <button data-number class="calc-numbers">1</button>
       <button data-number class="calc-numbers">2</button>
       <button data-number class="calc-numbers">3</button>
+      <button data-operation>-</button>
+      <button data-plus-minus class="calc-numbers calc-plus-minus">
+        <span>+</span>/<span>-</span>
+      </button>
+      <button data-number class="calc-numbers">0</button>
+      <button data-number class="calc-numbers">.</button>
       <button data-operation>+</button>
-      <button data-number="">0</button>
-      <button data-number="">.</button>
-      <button data-all-clear class="">AC</button>
       <button data-equals class="calc-equals">=</button>
+    </div>
+    <div class="helper">
+      <p class="heler__text">
+        Уважаемые проверяющие!<br />Прошу обратить внимание, что ввод
+        отрицательных чисел осущетсвляется с помощью кнопки "+/-". Сначала
+        вводим число, например, '3', потом на кнопку "+/-" и число станет
+        '-3'<br /><br />Возведение одно числа в степень другого, осущетсвляется
+        с помощью кнопки "x<sup>y</sup>". Процедура как с обычными
+        арифметическими действиями, например, '2 x<sup>y</sup> 3' кнопка "="
+        результат '8'<br /><br />
+        Для вычесления квадратного корня, сначала вводим число, потом жмём на
+        кнопку "√".
+      </p>
     </div>
     <script src="script.js"></script>
   </body>

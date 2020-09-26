@@ -15,15 +15,26 @@ body {
   background: #091921;
 }
 
+h1 {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+}
+
 .container {
-  border: 1px solid rgba(67, 136, 168, 0.904);
+  border: 3px solid rgba(58, 56, 54, 0.904);
+  box-shadow: 0 0 0px 1px rgba(67, 136, 168, 0.904);
   color: #ffffff;
   display: grid;
-  grid-template: minmax(150px, auto) repeat(5, 55px) / repeat(4, 75px);
+  grid-template: minmax(150px, auto) repeat(5, 55px) / repeat(5, 75px);
 }
 
 .container .calc-numbers {
   background: #000000;
+}
+
+.calc-equals {
+  grid-area: 2 / 5 / 7 / 6;
 }
 
 .container .calc-equals {
@@ -37,7 +48,7 @@ body {
 .container > button {
   color: #ffffff;
   font-size: 1.2rem;
-  background: #1f1f1f;
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(58, 56, 54, 0.904);
 }
 
@@ -74,4 +85,26 @@ body {
 
 .output .previous-operand {
   font-size: 1rem;
+}
+
+.calc-plus-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-plus-minus span:first-child {
+  padding-bottom: 5px;
+}
+
+.calc-plus-minus span:last-child {
+  padding-top: 3px;
+}
+
+.helper {
+  line-height: 25px;
+  background: white;
+  max-width: 350px;
+  padding: 10px;
+  margin-left: 50px;
 }
