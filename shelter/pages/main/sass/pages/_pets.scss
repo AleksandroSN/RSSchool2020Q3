@@ -1,0 +1,82 @@
+.pets {
+    padding: 81px 0 100px;
+    background: $color-light-l;
+
+    &__title {
+        max-width: 400px;
+        text-align: center;
+        // letter-spacing: 2.1px;
+    }
+
+    &__catalog {
+        display: flex;
+        align-items: center;
+        column-gap: 90px;
+        padding-bottom: 60px;
+        padding-top: 58px;
+
+        &-card {
+            background: $color-light-s;
+            display: flex;
+            row-gap: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        &-nav-left,
+        &-nav-right {
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            position: absolute;
+
+            img {
+                padding: 20px 17px;
+            }
+
+            &:hover {
+                background: $main-color;
+                cursor: pointer;
+            }
+        }
+
+        &-nav-left {
+            left: 0;
+        }
+
+        &-nav-right {
+            transform: rotate(180deg);
+            right: 0;
+        }
+
+
+    }
+
+    &__button {
+        background: $main-color;
+    }
+
+}
+
+.card {
+    &-head {
+        // padding-bottom: 30px;
+    }
+
+    &-name {
+        // padding-bottom: 30px;
+        // font-size: 20px;
+        // letter-spacing: 1.1px;
+
+    }
+
+    &-button {
+        margin-bottom: 30px;
+        padding: 13px 42.8px;
+        border: 2px solid $main-color;
+        background: transparent;
+    }
+
+
+}
