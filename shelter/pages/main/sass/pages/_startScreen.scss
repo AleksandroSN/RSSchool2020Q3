@@ -11,7 +11,8 @@
     &-title {
       color: $color-light-xl;
       letter-spacing: normal;
-      padding: 0 60px 41px 0;
+      padding-bottom: 41px;
+      margin-right: 60px;
     }
 
     &-text {
@@ -31,5 +32,41 @@
   &__img {
     position: relative;
     top: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 152px;
+
+    &__content {
+      margin-right: 0;
+      padding-top: 0;
+      @include flex(flex-start, flex-start, column);
+
+      &-button {
+        align-self: center;
+      }
+    }
+
+    &__img {
+      padding: 98px 0 0 139px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-top: 150px;
+    &__content {
+      text-align: center;
+
+      &-title {
+        font-size: rem(25);
+        letter-spacing: 0.06em;
+        padding-bottom: 43px;
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      padding: 103px 0 0 40px;
+    }
   }
 }

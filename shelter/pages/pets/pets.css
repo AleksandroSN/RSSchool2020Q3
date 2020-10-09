@@ -13,9 +13,16 @@
 .header__nav-item__link {
   color: #545454;
 }
+.header__nav-list {
+  margin: 0 2px 1px 0;
+}
 
 .link-active a {
   color: #292929;
+}
+
+.footer .wrapper {
+  padding-top: 14px;
 }
 
 .pets__catalog {
@@ -45,6 +52,30 @@
 }
 .pets__nav-paginator:not(:nth-child(-n+2)):hover {
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .pets {
+    padding: 80px 0 78px;
+  }
+  .pets__catalog {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    padding: 29px 0 38px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pets {
+    padding: 41px 0 42px;
+  }
+  .pets__catalog {
+    grid-template: repeat(3, 1fr)/1fr;
+    padding: 42px 0;
+  }
+  .pets__catalog-card:nth-last-child(-n+5) {
+    display: none;
+  }
+  .pets__nav {
+    column-gap: 10px;
+  }
 }
 
 .nav-disabled {

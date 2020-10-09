@@ -1,69 +1,87 @@
 .header {
-    top: 0;
-    z-index: 1;
-    position: absolute;
-    max-width: 100vw;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  max-width: 100vw;
+  width: 100%;
+  padding-top: 61px;
+
+  &__nav {
+    @include flex(space-between, center);
     width: 100%;
-    padding-top: 61px;
 
-    &__nav {
-        @include flex(space-between, center);
-        width: 100%;
+    &-list {
+      display: flex;
+      column-gap: 35px;
+      margin: 0 1px 3px 0;
 
-        &-list {
-            display: flex;
-            column-gap: 35px;
-            margin: 0 1px 3px 0;
-        }
-
-        &-item {
-            &__link {
-                line-height: 160%;
-                color: $color-dark-s;
-            }
-
-            &:hover {
-                cursor: pointer;
-                border-bottom: 3px solid $main-color;
-            }
-        }
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
     }
 
-    &__logo {
-        @include flex (center, center, column, nowrap);
+    &-item {
+      &__link {
+        line-height: 160%;
+        color: $color-dark-s;
+      }
 
-        &-title {
-            font-size: rem(32);
-            letter-spacing: 0.06em;
-            line-height: 110%;
-            font-weight: 400;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: $main-color;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid $main-color;
+      }
+    }
+  }
 
-        }
+  &__logo {
+    @include flex(center, center, column, nowrap);
 
-        &-subtitle {
-            color: $color-light-xl;
-            line-height: 15px;
-            font-weight: 400;
-            font-size: rem(13);
-            letter-spacing: 0.1em;
-            padding-top: 10px;
-            text-align: center;
-
-        }
-
+    &-title {
+      font-size: rem(32);
+      letter-spacing: 0.06em;
+      line-height: 110%;
+      font-weight: 400;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: $main-color;
     }
 
+    &-subtitle {
+      color: $color-light-xl;
+      line-height: 15px;
+      font-weight: 400;
+      font-size: rem(13);
+      letter-spacing: 0.1em;
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
 
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+
+    &-list {
+      margin-right: 3px;
+    }
+  }
 }
 
-.link-active {
-    line-height: 160%;
-    border-bottom: 3px solid $main-color;
+.burger {
+  display: none;
 
-    a {
-        color: $color-light-s;
+  @media screen and (max-width: 320px) {
+    display: block;
+    margin: 4px 43px 0 0;
+
+    &:hover {
+      cursor: pointer;
     }
+  }
+}
+.link-active {
+  line-height: 160%;
+  border-bottom: 3px solid $main-color;
 
+  a {
+    color: $color-light-s;
+  }
 }

@@ -25,6 +25,39 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 80px 0 78px;
+
+    &__catalog {
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      padding: 29px 0 38px;
+
+      // &-card:nth-child(4) {
+      //   display: flex;
+      // }
+
+      // &-card:nth-last-child(-n + 2) {
+      //   display: none;
+      // }
+    }
+  }
+  @media screen and (max-width: 320px) {
+    padding: 41px 0 42px;
+
+    &__catalog {
+      grid-template: repeat(3, 1fr) / 1fr;
+      padding: 42px 0;
+
+      &-card:nth-last-child(-n + 5) {
+        display: none;
+      }
+    }
+
+    &__nav {
+      column-gap: 10px;
+    }
+  }
 }
 
 .nav-disabled {

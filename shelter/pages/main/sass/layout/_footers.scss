@@ -28,6 +28,7 @@
   }
 
   &__contacts {
+    max-width: 279px;
     padding-top: 17px;
     flex: 1 0 280px;
     row-gap: 40px;
@@ -39,6 +40,7 @@
   }
 
   &__location {
+    max-width: 302px;
     flex: 0 1 302px;
     padding-top: 17px;
     row-gap: 32px;
@@ -46,6 +48,42 @@
     img {
       width: 22px;
       height: 32px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      padding-top: 10px;
+      column-gap: 60px;
+    }
+
+    &__img {
+      padding-top: 32px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .wrapper {
+      padding-top: 14px;
+    }
+
+    &__location,
+    &__contacts {
+      &-title {
+        font-size: rem(35);
+        text-align: center;
+      }
+    }
+    &__location {
+      padding-top: 40px;
+    }
+
+    &__img {
+      padding-top: 46px;
+
+      img {
+        width: 260px;
+      }
     }
   }
 }
