@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 30.5px 0;
+  background: $color-light-xl;
+
+  &__logo {
+    &-title {
+      color: $color-dark-l;
+    }
+
+    &-subtitle {
+      color: $color-dark-3xl;
+    }
+  }
+
+  &__nav {
+    &-item {
+      &__link {
+        color: $color-dark-l;
+      }
+    }
+  }
+}
+
+.link-active {
+  a {
+    color: $color-dark-3xl;
+  }
+}

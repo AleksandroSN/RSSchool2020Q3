@@ -7,10 +7,7 @@
     padding-top: 61px;
 
     &__nav {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between, center);
         width: 100%;
 
         &-list {
@@ -20,25 +17,24 @@
         }
 
         &-item {
-
-            &:first-child {
-                border-bottom: 3px solid $main-color;
-            }
-
             &__link {
                 line-height: 160%;
                 color: $color-dark-s;
+            }
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: 3px solid $main-color;
             }
         }
     }
 
     &__logo {
-        display: flex;
-        flex-direction: column;
+        @include flex (center, center, column, nowrap);
 
         &-title {
-            font-size: 2.1334rem;
-            letter-spacing: 1.9px;
+            font-size: rem(32);
+            letter-spacing: 0.06em;
             line-height: 110%;
             font-weight: 400;
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -50,8 +46,8 @@
             color: $color-light-xl;
             line-height: 15px;
             font-weight: 400;
-            font-size: 0.87rem;
-            letter-spacing: 1.3px;
+            font-size: rem(13);
+            letter-spacing: 0.1em;
             padding-top: 10px;
             text-align: center;
 
@@ -64,6 +60,10 @@
 
 .link-active {
     line-height: 160%;
-    color: $color-light-s;
+    border-bottom: 3px solid $main-color;
+
+    a {
+        color: $color-light-s;
+    }
 
 }

@@ -17,8 +17,8 @@
             >
           </a>
           <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-item__link link-active"
+            <li class="header__nav-item link-active">
+              <a class="header__nav-item__link "
                 >About the shelter</a
               >
             </li>
@@ -35,6 +35,7 @@
         </nav>
       </div>
     </header>
+    <main>
     <section class="start-screen">
       <div class="wrapper">
         <div class="start-screen__content">
@@ -84,27 +85,27 @@
         <h3 class="pets__title">Our friends who</br> are looking for a house</h3>
         <div class="pets__catalog">
           <picture class="pets__catalog-nav-left"><img src="../../assets/img/Arrow.svg" alt="nav-left"></picture>
-          <div class="pets__catalog-card">
+          <a href="#" class="pets__catalog-card">
             <picture class="card-head">
               <img src="../../assets/img/pets-katrine.jpg" alt="cat katrine" />
             </picture>
             <h4 class="card-name">Katrine</h4>
             <button class="card-button button">Learn more</button>
-          </div>
-          <div class="pets__catalog-card">
+          </a>
+          <a href="#" class="pets__catalog-card">
             <picture class="card-head">
               <img src="../../assets/img/pets-jennifer.jpg" alt="dog jennifer" />
               </picture>
             <h4 class="card-name">Jennifer</h4>
             <button class="card-button button">Learn more</button>
-          </div>
-          <div class="pets__catalog-card">
+          </a>
+          <a href="#" class="pets__catalog-card">
             <picture class="card-head">
               <img src="../../assets/img/pets-woody.jpg" alt="dog woody" />
             </picture>
             <h4 class="card-name">Woody</h4>
             <button class="card-button button">Learn more</button>
-          </div>
+          </a>
           <picture class="pets__catalog-nav-right"><img src="../../assets/img/Arrow.svg" alt="nav-right"></picture>
         </div>
         <button class="pets__button button">Get to know the rest</button>
@@ -161,26 +162,39 @@
           <h5 class="donation__form-subtitle">Name of the bank / Type of bank account</h5>
           <a class="donation__form-link" href="#"><img src="../../assets/img/credit-card.svg" alt="creditCard"><h4>8380 2880 8028 8791 7435</h4></a>
           <p class="donation__form-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-        </div>
+       </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__contacts">
-          <h3 class="footer__contacts-title">For questions and suggestions</h3>
-          <h4 class="footer__contacts-mail"><img src="../../assets/img/icon-email.svg" alt="email">email@shelter.com</h4>
-          <h4 class="footer__contacts-phone"><img src="../../assets/img/icon-phone.svg" alt="icon-phone">+13 674 567 75 54</h4>
-        </div>
-        <div class="footer__location">
-          <h3 class="footer__location-title">We are waiting for your visit</h3>
-          <h4 class="footer__location-boston"><img src="../../assets/img/icon-marker.svg" alt="marker">1 Central Street, Boston (entrance from the store)</h4>
-          <h4 class="footer__location-london"><img src="../../assets/img/icon-marker.svg" alt="marker">18 South Park, London </h4>
-        </div>
-        <picture class="footer__img"><img src="../../assets/img/footer-puppy.png" alt="Puppy" class="footer__img"></picture>
-        
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__contacts">
+        <h3 class="footer__contacts-title">For questions and suggestions</h3>
+        <a class="footer__contacts-mail" href="mailto:email@shelter.com">
+          <h4><img src="../../assets/img/icon-email.svg" alt="email">email@shelter.com</h4>
+        </a>
+        <a class="footer__contacts-phone" href="tel:+13 674 567 75 54">
+          <h4><img src="../../assets/img/icon-phone.svg" alt="icon-phone">+13 674 567 75 54
+          </h4>
+        </a>
       </div>
-    </footer>
+      <div class="footer__location">
+        <h3 class="footer__location-title">We are waiting for your visit</h3>
+        <a href="https://goo.gl/maps/HBSuHesotCJ2DB9Q8" target="_blank" rel="noopener noreferrer"
+          class="footer__location-boston">
+          <h4><img src="../../assets/img/icon-marker.svg" alt="marker">1 Central Street,
+            Boston (entrance from the store)</h4>
+        </a>
+        <a href="https://goo.gl/maps/jffz6jQBsxopepm39" target="_blank" rel="noopener noreferrer"
+          class="footer__location-london">
+          <h4><img src="../../assets/img/icon-marker.svg" alt="marker">18 South Park,
+            London </h4>
+        </a>  
+      </div>
+      <picture class="footer__img"><img src="../../assets/img/footer-puppy.png" alt="Puppy" class="footer__img">
+      </picture>
+    </div>
+  </footer>
     <script src="./script.js"></script>
   </body>
 </html>

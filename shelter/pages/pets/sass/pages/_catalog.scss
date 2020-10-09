@@ -1,0 +1,41 @@
+.pets {
+  &__catalog {
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    gap: 30px 40px;
+  }
+
+  &__nav {
+    @include flex(center, center);
+    column-gap: 20px;
+
+    &-paginator {
+      @include flex(center, center);
+      border-radius: 50%;
+      border: 2px solid $main-color;
+      background: transparent;
+      width: 52px;
+      height: 52px;
+
+      &:nth-last-child(-n + 2) {
+        transform: rotate(180deg);
+      }
+
+      &:not(:nth-child(-n + 2)):hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.nav-disabled {
+  border: 2px solid $color-dark-s;
+}
+
+.nav-page {
+  background: $main-color;
+
+  &:hover {
+    background: $main-color-light;
+    border: $main-color-light;
+  }
+}
