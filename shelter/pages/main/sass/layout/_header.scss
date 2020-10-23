@@ -15,7 +15,7 @@
       column-gap: 35px;
       margin: 0 1px 3px 0;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (min-width: 319px) and (max-width: 767px) {
         display: none;
       }
     }
@@ -68,13 +68,17 @@
 .burger {
   display: none;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (min-width: 319px) and (max-width: 767px) {
     display: block;
-    margin: 4px 43px 0 0;
+    margin-left: auto;
 
     &:hover {
       cursor: pointer;
     }
+  }
+
+  @media screen and (max-width: 320px) {
+    margin: 4px 43px 0 0;
   }
 }
 .link-active {

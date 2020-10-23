@@ -14,11 +14,13 @@
 .wrapper {
   display: flex;
   margin: 0 auto;
-  max-width: 1200px;
+  padding: 0 15px;
+  max-width: 1230px;
   position: relative;
 
   @media screen and (max-width: 768px) {
     margin: 0 30px;
+    padding: 0;
     max-width: 708px;
     flex-wrap: wrap;
     justify-content: center;

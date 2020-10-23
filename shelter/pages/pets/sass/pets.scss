@@ -1,5 +1,20 @@
 @import "../../main/sass/abstracts/variables";
 @import "../../main/sass/abstracts/mixins";
 @import "layout/headerPets";
-@import "layout/footerPets";
+// @import "layout/footerPets";
 @import "pages/catalog";
+
+.burger {
+  @media screen and (max-width: 320px) {
+    margin: 1px 40px 0 0;
+  }
+}
+
+.footer {
+  @media screen and (max-width: 768px) {
+    &__location,
+    &__contacts {
+      padding: 20px 0 0; ///
+    }
+  }
+}

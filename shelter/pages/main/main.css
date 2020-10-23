@@ -170,7 +170,7 @@ a {
   column-gap: 35px;
   margin: 0 1px 3px 0;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 319px) and (max-width: 767px) {
   .header__nav-list {
     display: none;
   }
@@ -218,13 +218,18 @@ a {
 .burger {
   display: none;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 319px) and (max-width: 767px) {
   .burger {
     display: block;
-    margin: 4px 43px 0 0;
+    margin-left: auto;
   }
   .burger:hover {
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 320px) {
+  .burger {
+    margin: 4px 43px 0 0;
   }
 }
 
@@ -241,13 +246,15 @@ a {
 }
 .footer .wrapper {
   padding-top: 40px;
-  column-gap: 159px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer__contacts, .footer__location {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column nowrap;
+  margin-right: auto;
 }
 .footer__contacts h4, .footer__location h4 {
   display: flex;
@@ -263,7 +270,6 @@ a {
 .footer__contacts {
   max-width: 279px;
   padding-top: 17px;
-  flex: 1 0 280px;
   row-gap: 40px;
 }
 .footer__contacts img {
@@ -272,8 +278,7 @@ a {
 }
 .footer__location {
   max-width: 302px;
-  flex: 0 1 302px;
-  padding-top: 17px;
+  padding: 17px 0;
   row-gap: 32px;
 }
 .footer__location img {
@@ -284,6 +289,10 @@ a {
   .footer .wrapper {
     padding-top: 10px;
     column-gap: 60px;
+  }
+  .footer__location, .footer__contacts {
+    margin: 0;
+    padding: 17px 0 0;
   }
   .footer__img {
     padding-top: 32px;
@@ -729,12 +738,14 @@ p {
 .wrapper {
   display: flex;
   margin: 0 auto;
-  max-width: 1200px;
+  padding: 0 15px;
+  max-width: 1230px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .wrapper {
     margin: 0 30px;
+    padding: 0;
     max-width: 708px;
     flex-wrap: wrap;
     justify-content: center;
