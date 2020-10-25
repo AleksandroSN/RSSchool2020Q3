@@ -1,0 +1,61 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/reset";
+@import "components/buttons";
+@import "layout/header";
+@import "layout/footers";
+@import "pages/startScreen";
+@import "pages/about";
+@import "pages/pets";
+@import "pages/help";
+@import "pages/donation";
+@import "typography/typography";
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 30px;
+    padding: 0;
+    max-width: 708px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin: 0 10px;
+    max-width: 300px;
+  }
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-center {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+//TODO - рефактор + интерактивность на весь сайт
