@@ -11,7 +11,7 @@ body {
   text-shadow: 1px 1px black, -1px -1px black;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: auto;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
 .wrapper {
   padding: 0 30px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: space-between;
   height: 100vh;
 }
@@ -172,6 +172,7 @@ h2 {
 @media (max-width: 768px) {
   .wrapper {
     padding: 0 15px;
+    justify-content: unset;
   }
 
   header {
@@ -180,6 +181,7 @@ h2 {
   }
 
   footer {
+    margin-top: 50px;
     min-height: 250px;
   }
 
@@ -201,5 +203,12 @@ h2 {
 
   #data {
     font-size: 2rem;
+  }
+
+  #quote {
+    flex-flow: column;
+  }
+  #quote__text-container {
+    margin: 10px 0 0;
   }
 }
