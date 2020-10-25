@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <svg
+          class="shadowSVG"
+          id="changeBG"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="50px"
+          height="50px"
+          viewBox="0 0 121.8 121.8"
+          fill="white"
+          ;
+        >
+          <g>
+            <path
+              d="M20.2,101.448c16.5,16.5,40.5,20.8,60.9,13c-3.699-2.601-6.1-6.899-6.1-11.7v-1.9c-15,5.4-32.4,2.101-44.4-9.899
+		c-10.6-10.7-14.3-25.601-11.3-39.3c1.2-5.5,3.6-10.8,7-15.6v9.8c0,3.3,2.7,6,6,6c3.3,0,6-2.7,6-6v-21v-5.4c0-3.3-2.7-6-6-6h-3.6
+		L6,13.348c-3.3,0-6,2.7-6,6s2.7,6,6,6h9.8c-2.1,2.6-3.9,5.4-5.5,8.3C-1.4,55.348,1.8,83.049,20.2,101.448z"
+            />
+            <path
+              d="M89.4,108.848h2.799H115.8c3.3,0,6-2.699,6-6c0-3.299-2.7-6-6-6H105.4c2.1-2.6,4-5.399,5.5-8.299
+		c12-21.801,8.699-49.701-9.701-68.101c-16.399-16.6-40.5-20.9-61-13.1c3.9,2.6,6.5,7,6.5,12v1.5c14.9-5.2,32.1-1.8,44,10.1
+		c10.601,10.6,14.4,25.4,11.5,39.101C101,75.448,98.8,80.748,95.4,85.448v-9c0-3.3-2.701-6-6-6c-3.301,0-6,2.7-6,6v20.5v6
+		C83.4,106.148,86.1,108.848,89.4,108.848z"
+            />
+          </g>
+        </svg>
+        <div class="weather">
+          <i class="weather-icon owf"></i>
+          <div id="city" contenteditable="true"></div>
+          <div id="temperature"></div>
+          <div id="humidity"></div>
+          <div id="wind"></div>
+          <div id="description"></div>
+        </div>
+      </header>
+      <main id="main">
+        <time id="time"></time>
+        <p id="data"></p>
+        <h1 class="h1">
+          <span id="greeting"></span>
+          <span contenteditable="true" id="name"></span>
+        </h1>
+
+        <h2>What Is Your Focus Today?</h2>
+        <h2 contenteditable="true" id="focus"></h2>
+      </main>
+      <footer>
+        <button id="btn">
+          UPDATE!
+          <img src="./assets/images/fist.svg" alt="fist" />
+        </button>
+        <figure id="quote">
+          <blockquote id="quote__text-container"></blockquote>
+          <figcaption class="quote__author">
+            <img id="ChuckImg" src="" alt="Chuck" />Chuck Norris
+          </figcaption>
+        </figure>
+      </footer>
+
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
