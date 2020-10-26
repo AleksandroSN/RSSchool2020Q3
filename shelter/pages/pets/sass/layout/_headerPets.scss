@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   padding: 30.5px 0;
+  min-height: 121px;
   background: $color-light-xl;
 
   &__logo {
@@ -18,6 +19,10 @@
     &-item {
       &__link {
         color: $color-dark-l;
+
+        @media screen and (max-width: 767px) {
+          color: $color-light-s;
+        }
       }
     }
     &-list {
@@ -29,5 +34,9 @@
 .link-active {
   a {
     color: $color-dark-3xl;
+
+    @media screen and (max-width: 767px) {
+      color: $color-light-s;
+    }
   }
 }
