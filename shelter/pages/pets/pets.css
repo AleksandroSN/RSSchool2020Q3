@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   padding: 30.5px 0;
+  min-height: 121px;
   background: #ffffff;
 }
 .header__logo-title {
@@ -13,12 +14,22 @@
 .header__nav-item__link {
   color: #545454;
 }
+@media screen and (max-width: 767px) {
+  .header__nav-item__link {
+    color: #fafafa;
+  }
+}
 .header__nav-list {
   margin: 0 2px 1px 0;
 }
 
 .link-active a {
   color: #292929;
+}
+@media screen and (max-width: 767px) {
+  .link-active a {
+    color: #fafafa;
+  }
 }
 
 .footer .wrapper {

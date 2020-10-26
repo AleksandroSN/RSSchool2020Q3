@@ -12,23 +12,27 @@
 <body>
   <header class="header">
     <div class="wrapper">
+      <div class="shadow"></div>
       <nav class="header__nav">
-        <a href="#" class="header__logo">
+        <a href="../main/main.html" class="header__logo">
           <h1 class="header__logo-title">Cozy House</h1>
           <span class="header__logo-subtitle">Shelter for pets in Boston</span>
         </a>
+        <div class="burger">
+          <img src="../../assets/img/Burger.svg" alt="burger menu">
+        </div>
         <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-item__link">About the shelter</a>
+          <li class="header__nav-item ">
+            <a href="../main/main.html" class="header__nav-item__link  ">About the shelter</a>
           </li>
           <li class="header__nav-item link-active">
-            <a class="header__nav-item__link ">Our pets</a>
+            <a href="../pets/pets.html" class="header__nav-item__link active-link">Our pets</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item__link">Help the shelter</a>
+            <a href="javascript:void(0);" class="header__nav-item__link">Help the shelter</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-item__link">Contacts</a>
+            <a href="javascript:void(0);" class="header__nav-item__link">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -152,12 +156,53 @@
           class="footer__location-london">
           <h4><img src="../../assets/img/icon-marker.svg" alt="marker">18 South Park,
             London </h4>
-        </a>  
+        </a>
       </div>
       <picture class="footer__img"><img src="../../assets/img/footer-puppy.png" alt="Puppy" class="footer__img">
       </picture>
     </div>
   </footer>
+  <div class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__close-button">
+        <img src="../../assets/img/cross.svg" alt="cross">
+      </div>
+      <div class="popup__window">
+        <!-- <picture class="popup__window-image">
+          <img src="../../assets/img/pets-jennifer.jpg" alt="dog">
+        </picture>
+        <div class="popup__window-text">
+          <div class="popup-content__caption">
+            <h3 class="popup-content__caption-title">Jennifer</h3>
+            <h4 class="popup-content__caption-subtitle">Labrador</h4>
+          </div>
+          <h5 class="popup-content__description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to
+            find a new forever home. This girl really enjoys being able to go outside to run and play, but won't
+            hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
+          <ul class="popup-content__list">
+            <li class="popup-content__list-item" id="petAge">
+              <h5 class="popup-content__list-item--text-black">
+                <span class="popup-content__list-item--bold">Age : </span> 2
+              </h5>
+            </li>
+            <li class="popup-content__list-item" id="petInoculations">
+              <h5 class="popup-content__list-item--text-black"><span class="popup-content__list-item--bold">Inoculations
+                  : </span>none</h5>
+            </li>
+            <li class="popup-content__list-item" id="petDiseases">
+              <h5 class="popup-content__list-item--text-black"><span class="popup-content__list-item--bold">Diseases :
+                </span>none</h5>
+            </li>
+            <li class="popup-content__list-item" id="petParasites">
+              <h5 class="popup-content__list-item--text-black"><span class="popup-content__list-item--bold">Parasites :
+                </span>none</h5>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="../main/js/script.js"></script>
 </body>
 
 </html>

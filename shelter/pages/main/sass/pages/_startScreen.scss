@@ -17,7 +17,8 @@
 
     &-text {
       color: $color-dark-s;
-      padding-bottom: 41px;
+      // padding-bottom: 41px;
+      padding-bottom: 56px; // change style for tag <a>
     }
 
     &-button {
@@ -34,6 +35,12 @@
     top: 2px;
   }
 
+  @media screen and (max-width: 1279px) {
+    &__content {
+      padding-bottom: 98px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     padding-top: 152px;
 
@@ -48,7 +55,7 @@
     }
 
     &__img {
-      padding: 98px 0 0 139px;
+      padding-left: 139px;
     }
   }
 
