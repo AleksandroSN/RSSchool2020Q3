@@ -54,7 +54,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1279px) {
     .wrapper {
       padding-top: 10px;
       column-gap: 60px;
@@ -71,7 +71,7 @@
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     .wrapper {
       padding-top: 14px;
     }
@@ -83,9 +83,6 @@
         text-align: center;
       }
     }
-    &__location {
-      padding-top: 40px;
-    }
 
     &__img {
       padding-top: 46px;
@@ -93,6 +90,12 @@
       img {
         width: 260px;
       }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    &__location {
+      padding-top: 40px;
     }
   }
 }

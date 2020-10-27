@@ -43,7 +43,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1279px) {
     padding: 81px 0 102px;
     &__img {
       order: 1;
@@ -52,7 +52,7 @@
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     padding: 40px 0;
 
     &__img {

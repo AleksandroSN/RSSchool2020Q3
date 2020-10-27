@@ -1,4 +1,5 @@
 //DOM Elements
+const body = document.querySelector("body");
 const burger = document.querySelector(".burger");
 const headerLogo = document.querySelector(".header__logo");
 const headerNavList = document.querySelector(".header__nav-list");
@@ -53,7 +54,7 @@ async function popupPet(evt) {
   const url = `../pets.json`;
   const res = await fetch(url);
   const data = await res.json();
-  document.body.style.overflowY = "hidden";
+  body.classList.add("active");
   popup.classList.add("active");
   //   console.log(data.findIndex((elem) => elem.name == "Katrine"));
   let name = evt.target
@@ -98,7 +99,7 @@ async function popupPet(evt) {
       evt.target.className === "popup active"
     ) {
       popup.classList.remove("active");
-      document.body.style.removeProperty("overflow-y");
+      body.classList.remove("active");
     }
   });
 }
