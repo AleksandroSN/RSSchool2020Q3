@@ -957,9 +957,11 @@ button.swiper-pagination-bullet {
   line-height: 160%;
   color: #cdcdcd;
 }
-.header__nav-item:hover {
-  cursor: pointer;
+.header__nav-item:hover:nth-child(2) {
   border-bottom: 3px solid #f1cdb3;
+}
+.header__nav-item:nth-last-child(-n+2) a {
+  pointer-events: none;
 }
 .header__logo {
   display: flex;

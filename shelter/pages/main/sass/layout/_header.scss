@@ -47,9 +47,12 @@
         color: $color-dark-s;
       }
 
-      &:hover {
-        cursor: pointer;
+      &:hover:nth-child(2) {
         border-bottom: 3px solid $main-color;
+      }
+
+      &:nth-last-child(-n + 2) a {
+        pointer-events: none;
       }
     }
   }
