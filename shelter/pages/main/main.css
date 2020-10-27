@@ -1583,10 +1583,9 @@ p {
     justify-content: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .wrapper {
     margin: 0 10px;
-    max-width: 300px;
   }
 }
 
