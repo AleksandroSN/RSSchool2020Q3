@@ -15,7 +15,7 @@
       column-gap: 35px;
       margin: 0 1px 3px 0;
 
-      @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
         overflow: hidden;
         flex-flow: column;
         justify-content: center;
@@ -113,6 +113,7 @@
 .burger {
   display: none;
 
+
   @media screen and (max-width: 767px) {
     display: block;
     margin: 4px 43px 0 0;
@@ -129,6 +130,10 @@
       right: 0;
       top: 50px;
     }
+  }
+
+  @media screen and (max-width: 320px) {
+    margin: 4px 43px 0 0;
   }
 }
 .link-active {

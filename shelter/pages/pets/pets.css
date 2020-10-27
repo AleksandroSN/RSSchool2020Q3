@@ -32,6 +32,7 @@
   }
 }
 
+
 .footer .wrapper {
   padding-top: 14px;
 }
@@ -39,6 +40,7 @@
 .pets__title {
   flex: 100%;
 }
+
 .pets__catalog {
   grid-template: 1fr 1fr/repeat(4, 1fr);
   gap: 30px 40px;
@@ -103,4 +105,16 @@
 .nav-page:hover {
   background: #fddcc4;
   border: #fddcc4;
+}
+
+@media screen and (max-width: 320px) {
+  .burger {
+    margin: 1px 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__location, .footer__contacts {
+    padding: 20px 0 0;
+  }
 }
