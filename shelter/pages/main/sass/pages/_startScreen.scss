@@ -36,15 +36,10 @@
   }
 
   @media screen and (max-width: 1279px) {
-    &__content {
-      padding-bottom: 98px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
     padding-top: 152px;
 
     &__content {
+      padding-bottom: 98px;
       margin-right: 0;
       padding-top: 0;
       @include flex(flex-start, flex-start, column);
@@ -59,8 +54,8 @@
     }
   }
 
-  @media screen and (max-width: 320px) {
-    padding-top: 150px;
+  @media screen and (max-width: 767px) {
+    // padding-top: 150px;
     &__content {
       text-align: center;
 

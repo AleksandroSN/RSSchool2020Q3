@@ -67,8 +67,17 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1279px) {
+    .wrapper {
+      flex-flow: column;
+      align-items: center;
+    }
+
     padding: 91px 0 100px;
+
+    &__title {
+      flex: 100%;
+    }
     &__catalog {
       grid-template: 1fr / 1fr 1fr;
       column-gap: 40px;
@@ -79,7 +88,7 @@
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     padding: 39px 0;
 
     &__catalog {
