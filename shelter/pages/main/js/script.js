@@ -110,22 +110,24 @@ catalogCard.forEach((el) =>
   })
 );
 
-// let mySwiper = new Swiper(".swiper-container", {
-//   loop: true,
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     1279: {
-//       slidesPerView: 3,
-//       spaceBetween: 90,
-//     },
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+var mySwiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slidesPerGroup: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 90,
+      slidesPerGroup: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

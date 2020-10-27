@@ -4,6 +4,9 @@
   }
 
   &__catalog {
+    display: grid;
+    padding-bottom: 60px;
+    padding-top: 58px;
     grid-template: 1fr 1fr / repeat(4, 1fr);
     gap: 30px 40px;
   }
@@ -42,9 +45,9 @@
       //   display: flex;
       // }
 
-      // &-card:nth-last-child(-n + 2) {
-      //   display: none;
-      // }
+      &-card:nth-last-child(-n + 2) {
+        display: none;
+      }
     }
   }
   @media screen and (max-width: 767px) {
