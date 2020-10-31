@@ -1601,6 +1601,11 @@ body.active {
   overflow: hidden;
   padding-right: 17px;
 }
+@media screen and (max-width: 768px) {
+  body.active {
+    padding-right: 0;
+  }
+}
 
 img {
   width: 100%;

@@ -10,7 +10,6 @@ const headerLogoSubtitle = document.querySelector(".header__logo-subtitle");
 
 //popup
 const cardButtons = document.querySelectorAll(".card-button");
-const catalogCard = document.querySelectorAll(".pets__catalog-card");
 const popup = document.querySelector(".popup");
 const popupWindow = document.querySelector(".popup__window");
 const popupCloseButton = document.querySelector(".popup__close-button");
@@ -46,9 +45,19 @@ linkActive.addEventListener("click", () => {
   headerLogo.classList.remove("burger-active");
   headerNavList.classList.remove("burger-active");
   shadow.classList.remove("burger-active");
-  //   burger.addEventListener("click", mobileMenu);
 });
 burger.addEventListener("click", mobileMenu);
+
+const popupDelay = () => {
+  const catalogCard = document.querySelectorAll(".pets__catalog-card");
+  catalogCard.forEach((el) =>
+    el.addEventListener("click", (evt) => {
+      popupPet(evt);
+    })
+  );
+};
+
+setInterval(popupDelay, 500);
 
 async function popupPet(evt) {
   const url = `../pets.json`;
@@ -56,7 +65,6 @@ async function popupPet(evt) {
   const data = await res.json();
   body.classList.add("active");
   popup.classList.add("active");
-  //   console.log(data.findIndex((elem) => elem.name == "Katrine"));
   let name = evt.target
     .closest(".pets__catalog-card")
     .querySelector(".card-name").textContent;
@@ -103,12 +111,6 @@ async function popupPet(evt) {
     }
   });
 }
-
-catalogCard.forEach((el) =>
-  el.addEventListener("click", (evt) => {
-    popupPet(evt);
-  })
-);
 
 var mySwiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
