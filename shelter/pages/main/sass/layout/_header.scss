@@ -47,7 +47,7 @@
         color: $color-dark-s;
       }
 
-      &:hover:nth-child(2) {
+      &:hover:nth-child(-n + 2) {
         border-bottom: 3px solid $main-color;
       }
 

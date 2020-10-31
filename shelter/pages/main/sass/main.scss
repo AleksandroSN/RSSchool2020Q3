@@ -45,6 +45,10 @@ body {
   &.active {
     overflow: hidden;
     padding-right: 17px;
+
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -65,5 +69,3 @@ img {
 a {
   text-decoration: none;
 }
-
-//TODO - рефактор + интерактивность на весь сайт

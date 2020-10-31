@@ -958,7 +958,7 @@ button.swiper-pagination-bullet {
   line-height: 160%;
   color: #cdcdcd;
 }
-.header__nav-item:hover:nth-child(2) {
+.header__nav-item:hover:nth-child(-n+2) {
   border-bottom: 3px solid #f1cdb3;
 }
 .header__nav-item:nth-last-child(-n+2) a {
@@ -1611,6 +1611,11 @@ body {
 body.active {
   overflow: hidden;
   padding-right: 17px;
+}
+@media screen and (max-width: 768px) {
+  body.active {
+    padding-right: 0;
+  }
 }
 
 img {
