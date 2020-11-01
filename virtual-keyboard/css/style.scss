@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px 0;
+  background: hsla(168, 100%, 13%, 1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: bottom 1s;
+  user-select: none;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-textarea {
+    width: 90%;
+    min-height: 300px;
+    height: calc(100% - 360px);
+    padding: 5px;
+    margin: 20px;
+  }
+
+  &--hidden {
+    // height: 0;
+    // padding: 0;
+    bottom: -100%;
+  } // add class with JS
+
+  &__keys {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__key {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border-width: 0;
+    background: hsla(0, 0%, 100%, 0.2);
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    position: relative;
+
+    @media screen and (max-width: 801px) {
+      font-size: 14px;
+    }
+
+    &--wide {
+      width: 12%;
+      max-width: 120px;
+
+      @media screen and (max-width: 1279px) {
+        width: 9%;
+      }
+
+      @media screen and (max-width: 801px) {
+        width: 5%;
+      }
+    }
+
+    &--wide-l {
+      width: 15%;
+      max-width: 150px;
+
+      @media screen and (max-width: 1279px) {
+        width: 12%;
+      }
+
+      @media screen and (max-width: 801px) {
+        width: 9%;
+      }
+    }
+
+    &--wide-xl {
+      width: 25%;
+      max-width: 380px;
+      // max-width: 500px;
+
+      @media screen and (max-width: 801px) {
+        width: 19%;
+      }
+    }
+
+    &--dark {
+      background: hsla(168, 100%, 8%, 0.5);
+    }
+
+    &--activable:after {
+      content: "";
+      top: 10px;
+      right: 10px;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: hsla(0, 0%, 0%, 0.4);
+
+      @media screen and (max-width: 768px) {
+        top: 2px;
+        right: 2px;
+      }
+    }
+
+    &--active::after {
+      background: hsla(138, 96%, 39%, 0.7);
+    } // add class with JS
+
+    &:active {
+      background-color: red;
+    }
+
+    &--backlight {
+      background-color: red;
+    }
+  }
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
