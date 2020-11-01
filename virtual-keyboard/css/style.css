@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px 0;
+  background: #004235;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: bottom 1s;
+  user-select: none;
+}
+.keyboard-title {
+  text-align: center;
+}
+.keyboard-main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.keyboard-textarea {
+  width: 90%;
+  min-height: 300px;
+  height: calc(100% - 360px);
+  padding: 5px;
+  margin: 20px;
+}
+.keyboard--hidden {
+  bottom: -100%;
+}
+.keyboard__keys {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.keyboard__key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border-width: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  position: relative;
+}
+@media screen and (max-width: 801px) {
+  .keyboard__key {
+    font-size: 14px;
+  }
+}
+.keyboard__key--wide {
+  width: 12%;
+  max-width: 120px;
+}
+@media screen and (max-width: 1279px) {
+  .keyboard__key--wide {
+    width: 9%;
+  }
+}
+@media screen and (max-width: 801px) {
+  .keyboard__key--wide {
+    width: 5%;
+  }
+}
+.keyboard__key--wide-l {
+  width: 15%;
+  max-width: 150px;
+}
+@media screen and (max-width: 1279px) {
+  .keyboard__key--wide-l {
+    width: 12%;
+  }
+}
+@media screen and (max-width: 801px) {
+  .keyboard__key--wide-l {
+    width: 9%;
+  }
+}
+.keyboard__key--wide-xl {
+  width: 25%;
+  max-width: 380px;
+}
+@media screen and (max-width: 801px) {
+  .keyboard__key--wide-xl {
+    width: 19%;
+  }
+}
+.keyboard__key--dark {
+  background: rgba(0, 41, 33, 0.5);
+}
+.keyboard__key--activable:after {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  .keyboard__key--activable:after {
+    top: 2px;
+    right: 2px;
+  }
+}
+.keyboard__key--active::after {
+  background: rgba(4, 195, 61, 0.7);
+}
+.keyboard__key:active {
+  background-color: red;
+}
+.keyboard__key--backlight {
+  background-color: red;
+}
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
