@@ -1,0 +1,89 @@
+// src/styles/main.css
+$font-size: 16px;
+$font-color: hsla(246, 38%, 36%, 1);
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 430px;
+  width: 100%;
+  
+  // display: grid;
+  // grid-template: repeat(4,1fr)/repeat(4,1fr);
+  // gap: 1px;
+  // align-items: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  // position: relative;
+
+  @media screen and (max-width: 500px) {
+    width: 300px;
+  }
+
+  
+}
+
+.game-container {
+  position: relative;
+  height: 430px;
+  font-size: 5rem;
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.5rem;
+    height: 330px;
+  }
+}
+
+.menu-list {
+  list-style: none;
+    font-size: 1.8rem;
+    display: flex;
+    margin: 0 5px 20px;
+    justify-content: space-between;
+
+    &__submenu {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.2rem;
+    }
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  border: 2px solid tomato;
+  border-radius: 10px;
+  transition: all .2s;
+  cursor: pointer;
+
+  // @media screen and (max-width: 500px) {
+  //   width: 70px;
+  //   height: 70px;
+  // }
+
+  // &.empty {
+  //   grid-row: 1;
+  //   grid-column: 1;
+  // }
+}
